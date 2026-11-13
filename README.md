@@ -4,9 +4,10 @@ A modern, campus guide website built with HTML, JavaScript and CSS. Designed for
 
 ## Features
 
-- **Single file** - the entire site lives in `index.html`
 - **Responsive layout** - works on desktop, tablet, and mobile
 - **Sticky navigation** - quick access to every section from anywhere on the page
+- **Open Library API integration** - search books using Open Library API
+- **Dark/Light mode** - switch between dark and light mode
 
 ## Sections
 
