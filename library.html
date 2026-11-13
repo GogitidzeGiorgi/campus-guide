@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Library - KIU Campus Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="main-nav">
+  <div class="container nav-inner">
+    <div class="brand"><a href="index.html" style="color:inherit;">KIU Campus Guide</a></div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+    <ul class="nav-links">
+      <li><a href="index.html">← Back to Guide</a></li>
+      <li><a href="index.html#map">Map</a></li>
+      <li><a href="index.html#AcademicBuildings">Academic Buildings</a></li>
+      <li><a href="index.html#Dormitories">Dormitories</a></li>
+      <li><a href="index.html#hours">Open Hours</a></li>
+    </ul>
+    <button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+  </div>
+</nav>
+
+<header class="lib-hero">
+  <div class="container">
+    <div class="lib-hero-inner">
+      <div>
+        <h1>Academic Library Search</h1>
+        <p>Search millions of academic books relevant to your studies at KIU.<br> Powered by the Open Library.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="library-search">
+  <div class="container">
+
+    <div class="book-search-bar">
+      <input
+        type="text"
+        id="book-input"
+        placeholder="Search by title, author, or subject…"
+        autocomplete="off"
+        aria-label="Search for academic books"
+      >
+      <button class="btn btn-primary" id="book-search-btn">Search</button>
+    </div>
+
+    <div class="quick-topics">
+      <span class="topic-label">Quick topics:</span>
+      <button class="topic-chip" data-query="computer science">Computer Science</button>
+      <button class="topic-chip" data-query="economics">Economics</button>
+      <button class="topic-chip" data-query="business management">Business</button>
+      <button class="topic-chip" data-query="mathematics">Mathematics</button>
+      <button class="topic-chip" data-query="psychology">Psychology</button>
+      <button class="topic-chip" data-query="architecture">Architecture</button>
+      <button class="topic-chip" data-query="engineering">Engineering</button>
+      <button class="topic-chip" data-query="law">Law</button>
+    </div>
+
+    <div id="book-status" class="book-status" aria-live="polite"></div>
+    <div id="book-results" class="book-grid"></div>
+
+    <div id="book-pagination" class="book-pagination" style="display:none;">
+      <button class="btn btn-secondary" id="page-prev" aria-label="Previous page">← Prev</button>
+      <div id="page-indicator" class="page-indicator"></div>
+      <button class="btn btn-secondary" id="page-next" aria-label="Next page">Next →</button>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    KIU Campus Guide - designed to help students understand every building and room without guessing.
+  </div>
+</footer>
+
+<script src="library.js"></script>
+</body>
+</html>

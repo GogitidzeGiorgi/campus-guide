@@ -1,6 +1,6 @@
 # Kutaisi International University - Campus Guide
 
-A modern, single-file campus guide website built with HTML and CSS. Designed for new students, it covers everything from opening hours and study spaces to safety procedures and room access - all in one scrollable page.
+A modern, campus guide website built with HTML, JavaScript and CSS. Designed for new students, it covers everything from opening hours and study spaces to safety procedures and room access - all in one scrollable page.
 
 ## Features
 
@@ -12,22 +12,17 @@ A modern, single-file campus guide website built with HTML and CSS. Designed for
 
 | Section | Description |
 |---|---|
-| 🗺️ Campus Map | Map embed placeholder with colour-coded zone legend |
-| 📚 Study Spaces | Silent zones, bookable rooms, self-study lounge, outdoor terraces, and lounge areas |
-| 🍽️ Food & Drink | Cafeteria, Spar campus store, and vending machine locations |
-| 🎮 Leisure | Game Room, Cinema Room, and Laundry facilities |
-| ⚕️ Services | Library details and Doctor's Office info |
-| 🚨 Safety & Security | Emergency contacts, CCTV, Safe Walk, and fire escape procedures |
-| 🔑 Room Access | Access levels, booking rules, and room use policies |
-| 🕐 Opening Hours | Hours grid for all facilities (Library, Cafeteria, Spar, Doctor, Game Room, Cinema, Laundry, Study Rooms) |
+| Campus Map | Map embed placeholder with colour-coded zone legend |
+| Study Spaces | Silent zones, bookable rooms, self-study lounge, outdoor terraces, and lounge areas |
+| Food & Drink | Cafeteria, Spar campus store, and vending machine locations |
+| Leisure | Game Room, Cinema Room, and Laundry facilities |
+| Services | Library details and Doctor's Office info |
+| Safety & Security | Emergency contacts, CCTV, Safe Walk, and fire escape procedures |
+| Room Access | Access levels, booking rules, and room use policies |
+| Opening Hours | Hours grid for all facilities (Library, Cafeteria, Spar, Doctor, Game Room, Cinema, Laundry, Study Rooms) |
+| Online Library | Search academic books by title, author or subject using the Open Library API. Recent search history, book cover previews and paginated search results |
 
-## Getting Started
 
-```bash
-git clone https://github.com/GogitidzeGiorgi/campus-guide
-cd campus-guide
-open index.html
-```
 
 ## Project Structure
 
@@ -35,6 +30,9 @@ open index.html
 campus-guide/
 ├── Images/
 ├── index.html
+├── library.html
+├── app.js
+├── library.js
 ├── style.css
 └── README.md
 ```
